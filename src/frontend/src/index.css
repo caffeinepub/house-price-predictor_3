@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Teal primary: #2E7C8C → oklch ~0.54 0.08 205 */
+    --primary: 0.54 0.08 205;
+    --primary-foreground: 0.98 0 0;
+
+    /* Success green: #2EAD65 → oklch ~0.62 0.15 155 */
+    --success: 0.62 0.15 155;
+    --success-foreground: 0.98 0 0;
+
+    /* Page backgrounds */
+    --background: 1 0 0;
+    --foreground: 0.18 0.01 260;
+
+    /* Cards */
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.01 260;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.01 260;
+
+    /* Muted section: #EEF6F8 → oklch ~0.96 0.015 210 */
+    --muted: 0.96 0.015 210;
+    --muted-foreground: 0.5 0.02 260;
+
+    /* Secondary */
+    --secondary: 0.96 0.015 210;
+    --secondary-foreground: 0.18 0.01 260;
+
+    /* Accent */
+    --accent: 0.94 0.02 205;
+    --accent-foreground: 0.54 0.08 205;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders */
+    --border: 0.92 0.01 210;
+    --input: 0.92 0.01 210;
+    --ring: 0.54 0.08 205;
+
+    /* Charts */
+    --chart-1: 0.54 0.08 205;
+    --chart-2: 0.62 0.15 155;
+    --chart-3: 0.646 0.222 41.116;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    /* Sidebar */
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.18 0.01 260;
+    --sidebar-primary: 0.54 0.08 205;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.96 0.015 210;
+    --sidebar-accent-foreground: 0.18 0.01 260;
+    --sidebar-border: 0.92 0.01 210;
+    --sidebar-ring: 0.54 0.08 205;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "DM Sans", sans-serif;
+  }
+}
